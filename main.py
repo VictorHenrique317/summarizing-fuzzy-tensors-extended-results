@@ -21,6 +21,5 @@ for plotting_data_path in plotting_data_paths:
 
             command = f"""jq -r '[.x, .y] | transpose | map(@tsv) | join("\n")' {json_file_path} > {tsv_file_path}"""
             os.system(command)
-            # os.system(f"rm {json_file_path}")
 
 
