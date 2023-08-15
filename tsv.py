@@ -2,13 +2,13 @@ import os
 
 # Transforming .json to .tsv
 plotting_data_paths = [
-    "real/retweets/post_analysis/plotting_data",
+    # "real/retweets/post_analysis/plotting_data",
     # "real/retweets_2d/post_analysis/plotting_data",
     
     # "synth/crisp/100x100x100/post_analysis/plotting_data",
     # "synth/crisp/1000x1000/post_analysis/plotting_data",
 
-    # "synth/fuzzy/100x100x100/post_analysis/plotting_data",
+    "synth/fuzzy/100x100x100/post_analysis/plotting_data",
     # "synth/fuzzy/1000x1000/post_analysis/plotting_data",
     ]
 
