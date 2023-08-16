@@ -4,16 +4,12 @@ import subprocess
 import re
 
 # Adding null model rss to plotting_data
-# iteration_paths = [
+iteration_paths = [
     # "synth/crisp/100x100x100/iterations",
     # "synth/crisp/1000x1000/iterations",
 
-    # "synth/fuzzy/100x100x100/iterations",
+    "synth/fuzzy/100x100x100/iterations",
     # "synth/fuzzy/1000x1000/iterations",
-# ]
-
-iteration_paths = [
-    "synth/fuzzy/1000x1000/iterations",
 ]
 
 for iteration_path in iteration_paths:
