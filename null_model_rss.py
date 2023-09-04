@@ -8,8 +8,8 @@ iteration_paths = [
     # "synth/crisp/100x100x100/iterations",
     # "synth/crisp/1000x1000/iterations",
 
-    "synth/100x100x100/iterations",
-    # "synth/fuzzy/1000x1000/iterations",
+    # "synth/100x100x100/iterations",
+    "synth/1000x1000/iterations",
 ]
 
 for iteration_path in iteration_paths:
@@ -48,6 +48,9 @@ for iteration_path in iteration_paths:
 
                 if match == co:
                     tsv_file_path = os.path.join(tsv_path, tsv_file)
+
+                    if "nclusterboxcrisp" not in tsv_file_path:
+                        continue
 
                     lines = None
                     with open(tsv_file_path, "r") as f:
