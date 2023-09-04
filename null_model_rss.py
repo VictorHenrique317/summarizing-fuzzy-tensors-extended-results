@@ -15,14 +15,8 @@ iteration_paths = [
 for iteration_path in iteration_paths:
     for co in [1,2,4,8,16]:
 
-        tensor_path = "tensors"
-        extension = None
-        if "crisp" in iteration_path:
-            tensor_path = f"{tensor_path}/numnoise"
-            extension = "fuzzy_tensor"
-        if "fuzzy" in iteration_path:
-            tensor_path = f"{tensor_path}/numnoise"
-            extension = "fuzzy_tensor"
+        extension = "fuzzy_tensor"
+        tensor_path = "tensors/numnoise"
 
         tensor_path = f"{tensor_path}/dataset-co{co}.{extension}"
 
@@ -39,11 +33,11 @@ for iteration_path in iteration_paths:
             empty_model_rss_s.append(float(rss))
 
         tsv_path = iteration_path.replace("iterations", "post_analysis")
-        tsv_path = f"{tsv_path}/plotting_data/rssevolution"
+        tsv_path = f"{tsv_path}/rssevolution"
 
         print(f"co{co} - mean {mean(empty_model_rss_s): .4f}")
-        # answer = input(f"Insert {mean(empty_model_rss_s): .4f} in all co{co}? (y/n)")
-        answer = "y"
+        answer = input(f"Insert {mean(empty_model_rss_s): .4f} in all co{co}? (y/n)")
+        # answer = "y"
 
         if answer == "y":
             for tsv_file in os.listdir(tsv_path):
