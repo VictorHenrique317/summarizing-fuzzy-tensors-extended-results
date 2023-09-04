@@ -8,7 +8,7 @@ iteration_paths = [
     # "synth/crisp/100x100x100/iterations",
     # "synth/crisp/1000x1000/iterations",
 
-    "synth/fuzzy/100x100x100/iterations",
+    "synth/100x100x100/iterations",
     # "synth/fuzzy/1000x1000/iterations",
 ]
 
