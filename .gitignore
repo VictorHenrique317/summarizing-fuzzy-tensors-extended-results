@@ -6,3 +6,7 @@ synth/1000x1000/iterations
 
 real/retweets/temp.sh
 real/retweets_2d/temp.sh
+
+sample.sh
+rename.sh
+mv_sac.sh
