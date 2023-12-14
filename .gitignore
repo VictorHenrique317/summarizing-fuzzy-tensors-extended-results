@@ -7,6 +7,11 @@ synth/1000x1000/iterations
 real/retweets/temp.sh
 real/retweets_2d/temp.sh
 
+real/retweets/logs
+real/retweets_2d/logs
+real/school/logs
+
 sample.sh
 rename.sh
 mv_sac.sh
+
